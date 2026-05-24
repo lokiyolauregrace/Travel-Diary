@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\FAQController;
 use App\Http\Controllers\TravelPostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -20,3 +20,4 @@ Route::middleware('auth')->group(function () {
     });
 
 require __DIR__.'/auth.php';
+Route::get('/faq', [FAQController::class, 'index'])->name('faq.index');
