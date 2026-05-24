@@ -12,8 +12,21 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('travel_posts', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+           $table->id();
+
+    $table->string('title');
+
+    $table->string('country');
+
+    $table->string('image')->nullable();
+
+    $table->text('content');
+
+    $table->timestamp('published_at')->nullable();
+
+    $table->foreignId('user_id')->constrained()->onDelete('cascade');
+
+    $table->timestamps();
         });
     }
 
