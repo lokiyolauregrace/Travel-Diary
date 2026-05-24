@@ -27,8 +27,8 @@
                     <div class="bg-white rounded-3xl shadow-lg overflow-hidden">
 
                         <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
-                             class="w-full h-56 object-cover">
-
+                             class="w-full h-64 object-cover                             max-w-sm
+                             rounded-t-3xl">
                         <div class="p-6">
 
                             <h2 class="text-2xl font-bold text-gray-800 mb-2">
