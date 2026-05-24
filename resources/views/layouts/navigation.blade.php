@@ -15,6 +15,13 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('travel-posts.index')" :active="request()->routeIs('travel-posts.*')">
+    {{ __('Travel Posts') }}
+</x-nav-link>
+
+<x-nav-link :href="route('faq.index')" :active="request()->routeIs('faq.*')">
+    {{ __('FAQ') }}
+</x-nav-link>
                 </div>
             </div>
 
@@ -98,3 +105,10 @@
         </div>
     </div>
 </nav>
+@if(auth()->user()->is_admin)
+
+<x-nav-link :href="url('/admin')">
+    {{ __('Admin') }}
+</x-nav-link>
+
+@endif
