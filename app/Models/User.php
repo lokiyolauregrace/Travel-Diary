@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Models;
+use App\Models\TravelPost;
+use App\Models\Comment;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Database\Factories\UserFactory;
@@ -16,7 +18,16 @@ class User extends Authenticatable
 {
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable;
-
+    protected $fillable = [
+    'name',
+    'email',
+    'password',
+    'username',
+    'birthday',
+    'bio',
+    'profile_picture',
+    'is_admin',
+];
     /**
      * Get the attributes that should be cast.
      *
@@ -29,4 +40,13 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    public function travelPosts()
+{
+    return $this->hasMany(TravelPost::class);
+}
+
+public function comments()
+{
+    return $this->hasMany(Comment::class);
+}
 }

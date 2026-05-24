@@ -7,6 +7,24 @@ use Illuminate\Database\Eloquent\Model;
 
 class TravelPost extends Model
 {
-    /** @use HasFactory<\Database\Factories\TravelPostFactory> */
     use HasFactory;
+
+    protected $fillable = [
+        'title',
+        'country',
+        'image',
+        'content',
+        'published_at',
+        'user_id',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
 }
