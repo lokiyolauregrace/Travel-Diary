@@ -10,7 +10,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TravelPostController;
 use App\Http\Controllers\AdminFAQController;
 use App\Http\Controllers\AdminContactController;
-
+use App\Http\Controllers\AdminUserController;
 /*
 |--------------------------------------------------------------------------
 | HOME
@@ -114,6 +114,17 @@ Route::middleware(['auth', 'admin'])->group(function () {
         return view('admin.dashboard');
     })->name('admin.dashboard');
 
+    Route::get('/admin/users', [AdminUserController::class, 'index'])
+    ->name('admin.users.index');
+
+Route::get('/admin/users/create', [AdminUserController::class, 'create'])
+    ->name('admin.users.create');
+
+Route::post('/admin/users', [AdminUserController::class, 'store'])
+    ->name('admin.users.store');
+
+Route::patch('/admin/users/{user}/toggle-admin', [AdminUserController::class, 'toggleAdmin'])
+    ->name('admin.users.toggle-admin');
 
     /*
     |--------------------------------------------------------------------------
