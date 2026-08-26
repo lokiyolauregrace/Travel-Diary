@@ -6,11 +6,11 @@
             <div class="flex justify-between items-center mb-8">
                 <div>
                     <h1 class="text-4xl font-bold text-pink-600">
-                        Travel Diaries ✈️
+                        Travel Diaries 
                     </h1>
 
                     <p class="text-gray-500 mt-2">
-                        Discover beautiful memories around the world 🌍
+                        Discover beautiful memories around the world 
                     </p>
                 </div>
 
@@ -36,7 +36,7 @@
                             </h2>
 
                             <p class="text-pink-500 font-semibold mb-3">
-                                📍 {{ $post->country }}
+                                 {{ $post->country }}
                             </p>
 
                             <p class="text-gray-600 mb-5">
