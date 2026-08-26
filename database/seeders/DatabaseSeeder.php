@@ -7,16 +7,15 @@ use App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     */
+    
     public function run(): void
     {
         User::create([
-            'name' => 'Admin',
-            'email' => 'admin@ehb.be',
-            'password' => bcrypt('Password!321'),
-            'is_admin' => true,
-        ]);
+    'name' => 'Admin',
+    'username' => 'admin',
+    'email' => 'admin@ehb.be',
+    'password' => bcrypt('Password!321'),
+    'is_admin' => true,
+]);
     }
 }
