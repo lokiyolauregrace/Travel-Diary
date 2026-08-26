@@ -1,147 +1,109 @@
-# 🌍 Travel Diary
+# Travel Diary
 
-Travel Diary is a Laravel web application where users can share travel experiences and discover places around the world ✈️
+Travel Diary is a Laravel website where users can share their travel experiences and discover posts from other users.
 
 This project was made for the Backend Web course using Laravel 13.
 
----
+## Features
 
-# ✨ Features
-
-- User registration and login
-- Admin and normal user roles
+- Registration and login
+- Normal users and administrators
 - Public user profiles
-- Create, edit and delete travel posts
+- Editing your own profile
+- Creating, editing and deleting travel posts
+- Categories for travel posts
 - FAQ page
 - Contact form
 - Admin dashboard
-- Responsive design
+- Admin user management
+- Responsive navigation
 
----
+## User Profiles
 
-# 👤 User Profiles
+Every user has a public profile that can also be viewed without being logged in.
 
-Users can:
-- Edit their profile
-- Add a username
-- Add a bio
-- Add their birthday
+A user can edit their own profile and add:
 
-Profiles are public and accessible for visitors.
+- Name
+- Username
+- Email
+- Birthday
+- About me
+- Profile picture
 
----
+The profile can be accessed through the user menu after logging in.
 
-# 📰 Travel Posts
+## Travel Posts
 
-Authenticated users can:
-- Create travel posts
-- Edit their own posts
-- Delete posts
-- View all travel posts
+Logged-in users can create travel posts.
 
-Each post contains:
+A travel post contains:
+
 - Title
 - Country
 - Content
 - Publication date
-- Image
+- Categories
 
----
+Users can:
 
-# 👑 Admin Features
+- Create a post
+- View posts
+- Edit a post
+- Delete a post
+- Add one or more categories to a post
+
+The categories use a many-to-many relationship with travel posts.
+
+## FAQ
+
+The website has a FAQ page where visitors can see questions and answers.
+
+Administrators can:
+
+- Create FAQ items
+- Edit FAQ items
+- Delete FAQ items
+- Manage FAQ categories
+
+## Contact
+
+Visitors can use the contact form to send a message.
+
+Administrators can view the submitted contact messages from the admin section.
+
+## Admin
+
+Administrators have access to an admin section.
 
 Admins can:
+
 - Access the admin dashboard
-- Manage FAQ items
+- Manage users
+- Create users manually
+- Give users administrator rights
+- Remove administrator rights
+- Manage FAQs
 - View contact messages
 
-Default admin account:
+There is also a default admin account created by the seeder.
 
 Email: admin@ehb.be  
 Password: Password!321
 
----
-
-# 🛠️ Technologies Used
+## Technologies
 
 - Laravel 13
 - PHP 8.4
-- TailwindCSS
 - Laravel Breeze
+- Blade
+- Tailwind CSS
 - SQLite
+- Eloquent ORM
 
----
-
-# 🚀 Installation
+## Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/lokiyolauregrace/Travel-Diary.git
-```
-
-Install dependencies:
-
-```bash
-composer install
-npm install
-```
-
-Generate app key:
-
-```bash
-php artisan key:generate
-```
-
-Run migrations and seeders:
-
-```bash
-php artisan migrate:fresh --seed
-```
-
-Start the project:
-
-```bash
-php artisan serve
-npm run dev
-```
-
----
-
-# 📚 Laravel Concepts Used
-
-- MVC structure
-- Middleware
-- Resource controllers
-- Route groups
-- Blade components
-- Eloquent relationships
-- Authentication
-- CRUD operations
-
----
-
-# 📸 Screenshots
-
-Screenshots can be added here:
-- Homepage
-- Dashboard
-- Travel posts
-- FAQ page
-- Admin dashboard
-
----
-
-# 📖 Sources
-
-- Laravel Documentation
-- TailwindCSS Documentation
-- Laravel Breeze
-- Course material
-- ChatGPT assistance
-
----
-
-# 👩‍💻 Author
-
-Backend Web Project — Travel Diaryd under the [MIT license](https://opensource.org/licenses/MIT).
+git clone https://github.com/lokiyolauregrace/Travel-Diary.gitDiaryd under the [MIT license](https://opensource.org/licenses/MIT).
