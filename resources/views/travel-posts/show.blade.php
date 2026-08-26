@@ -14,7 +14,7 @@
                 </h1>
 
                 <p class="text-xl text-gray-500 mb-6">
-                    📍 {{ $travelPost->country }}
+                     {{ $travelPost->country }}
                 </p>
 
                 <p class="text-gray-700 leading-8">
@@ -33,7 +33,7 @@
 
     <a href="{{ route('travel-posts.edit', $travelPost) }}"
        class="bg-pink-500 text-white px-5 py-3 rounded-2xl">
-        Edit ✨
+        Edit 
     </a>
 
     <form action="{{ route('travel-posts.destroy', $travelPost) }}"

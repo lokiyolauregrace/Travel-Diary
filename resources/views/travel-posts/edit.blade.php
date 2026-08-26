@@ -5,7 +5,7 @@
         <div class="max-w-2xl mx-auto bg-white p-8 rounded-3xl shadow-lg">
 
             <h1 class="text-3xl font-bold text-pink-500 mb-6">
-                Edit Travel Post ✨
+                Edit Travel Post 
             </h1>
 
             <form action="{{ route('travel-posts.update', $travelPost) }}" method="POST">
@@ -49,7 +49,7 @@
 
                 <button type="submit"
                         class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-2xl shadow">
-                    Update ✨
+                    Update 
                 </button>
 
             </form>

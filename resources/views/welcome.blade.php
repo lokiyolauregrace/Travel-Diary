@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Diary ✈️</title>
+    <title>Travel Diary </title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -13,7 +13,7 @@
     <nav class="bg-white shadow p-5 flex justify-between items-center">
 
         <h1 class="text-3xl font-bold text-pink-500">
-            Travel Diary ✈️
+            Travel Diary 
         </h1>
 
         <div class="flex gap-6 items-center">
@@ -60,25 +60,24 @@
         <div>
 
             <h1 class="text-6xl font-bold text-pink-500 leading-tight mb-8">
-                Share your travel memories with the world 🌍
+                Share your travel memories with the world 
             </h1>
 
             <p class="text-gray-700 text-xl mb-8">
                 Create beautiful travel posts, discover amazing places,
-                and keep your favorite memories forever ✨
+                and keep your favorite memories forever 
             </p>
 
             <div class="flex gap-5">
 
                 <a href="/travel-posts"
                    class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 rounded-3xl shadow-lg">
-                    Explore Posts ✈️
+                    Explore Posts 
                 </a>
 
                 <a href="/register"
                    class="bg-white border border-pink-300 text-pink-500 px-8 py-4 rounded-3xl shadow">
-                    Join Now 💖
-                </a>
+                    Join Now 
 
             </div>
 
@@ -102,7 +101,7 @@
         <div class="max-w-6xl mx-auto px-6">
 
             <h2 class="text-5xl font-bold text-center text-pink-500 mb-16">
-                Why Travel Diary? ✨
+                Why Travel Diary? 
             </h2>
 
             <div class="grid md:grid-cols-3 gap-8">
@@ -110,7 +109,7 @@
                 <div class="bg-pink-50 p-8 rounded-3xl shadow">
 
                     <h3 class="text-2xl font-bold text-pink-500 mb-4">
-                        Beautiful Posts 📸
+                        Beautiful Posts 
                     </h3>
 
                     <p class="text-gray-700">
@@ -124,7 +123,7 @@
                 <div class="bg-pink-50 p-8 rounded-3xl shadow">
 
                     <h3 class="text-2xl font-bold text-pink-500 mb-4">
-                        Community 🌍
+                        Community 
                     </h3>
 
                     <p class="text-gray-700">
@@ -138,7 +137,7 @@
                 <div class="bg-pink-50 p-8 rounded-3xl shadow">
 
                     <h3 class="text-2xl font-bold text-pink-500 mb-4">
-                        Personal Diary 💖
+                        Personal Diary 
                     </h3>
 
                     <p class="text-gray-700">
